@@ -20,6 +20,9 @@ public class PasswordGenerator {
 		byte userBirthMonth = (byte) Integer.parseInt(scanner.nextLine());
 		System.out.println("inserisci il tuo anno di nascita:");
 		short userBirthYear = (short) Integer.parseInt(scanner.nextLine());
+		// output
+		System.out.println("La tua password è:");
+		System.out.println(userFirstName + userLastName + userFavColour + (userBirthDay + userBirthMonth + userBirthYear));
 		}
 
 }
