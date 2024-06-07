@@ -15,14 +15,16 @@ public class PasswordGenerator {
 		System.out.println("inserisci il tuo colore preferito:");
 		String userFavColour = scanner.nextLine();
 		System.out.println("inserisci il giorno in cui sei nato:");
-		byte userBirthDay = (byte) Integer.parseInt(scanner.nextLine());
+		byte userBirthDay = (byte) scanner.nextInt();
 		System.out.println("inserisci il mese in cui sei nato:");
-		byte userBirthMonth = (byte) Integer.parseInt(scanner.nextLine());
+		byte userBirthMonth = (byte) scanner.nextInt();
 		System.out.println("inserisci il tuo anno di nascita:");
-		short userBirthYear = (short) Integer.parseInt(scanner.nextLine());
+		short userBirthYear = (short) scanner.nextInt();
 		// output
 		System.out.println("La tua password è:");
-		System.out.println(userFirstName + userLastName + userFavColour + (userBirthDay + userBirthMonth + userBirthYear));
+		System.out.println(userFirstName + "-" + userLastName + "-" + userFavColour +  "-" + (userBirthDay + userBirthMonth + userBirthYear));
+		
+		scanner.close();
 		}
 
 }
